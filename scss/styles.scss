@@ -1,0 +1,484 @@
+// Variables personalizables
+$icon_fontsize: 36px;
+
+// Colors
+$bkc_principal: rgb(224, 255, 0);
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66d9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+$black: black;
+$youtube_color: #e3342f;
+$facebook_color: blue;
+$instagram_color: orange;
+
+// Mixines generales
+
+@mixin my-body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	background: linear-gradient(180deg, rgba(224, 255, 0, 0.8869922969187675) 100%, rgba(0, 0, 0, 1) 100%);
+}
+
+@mixin important-titles {
+	font-size: 51px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration-line: underline;
+}
+
+@mixin fontSize-fontWeigth($font-size, $font-weight) {
+	font-size: $font-size;
+	font-weight: $font-weight;
+}
+
+@mixin width-height($width, $height) {
+	width: $width;
+	height: $height;
+}
+
+@mixin min-height($minHeight) {
+	min-height: 633px;
+}
+//  Estilos Generales
+* {
+	box-sizing: border-box;
+}
+
+body {
+	@include my-body;
+}
+
+/* Utilities */
+.container {
+	max-width: 1100px;
+	margin: auto;
+	overflow: hidden;
+	padding: 0 2rem;
+}
+
+/* Text Styles*/
+.x-large {
+	font-size: 4rem;
+	line-height: 1.2;
+	font-weight: 700;
+	text-align: center;
+}
+
+.large {
+	font-size: 3.5rem;
+	line-height: 1.2;
+	font-weight: 500;
+	text-align: center;
+}
+
+.lead {
+	font-size: 2.5rem;
+	text-align: center;
+	font-weight: 400;
+}
+
+.lead--p {
+	font-size: 1.5rem;
+	text-align: center;
+	font-weight: 400;
+}
+
+.text--primary {
+	color: $blue;
+}
+
+.text--purple {
+	color: $purple;
+}
+
+.text--dark {
+	color: $black;
+}
+
+.text--white {
+	color: #ffff;
+}
+
+.text--indigo {
+	color: $indigo;
+}
+
+.text--red {
+	color: $red;
+}
+
+.text--pink {
+	color: $pink;
+}
+
+.text--orange {
+	color: $orange;
+}
+
+.text--cyan {
+	color: $cyan;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-left {
+	text-align: left;
+}
+
+/* Padding */
+.p {
+	padding: 0.5rem;
+}
+.p-1 {
+	padding: 1rem;
+}
+.p-2 {
+	padding: 2rem;
+}
+.p-3 {
+	padding: 3rem;
+}
+.py {
+	padding: 0.5rem 0;
+}
+.py-1 {
+	padding: 1rem 0;
+}
+.py-2 {
+	padding: 2rem 0;
+}
+.py-3 {
+	padding: 3rem 0;
+}
+
+/* Margin */
+.m {
+	margin: 0.5rem;
+}
+.m-1 {
+	margin: 1rem;
+}
+.m-2 {
+	margin: 2rem;
+}
+.m-3 {
+	margin: 3rem;
+}
+.my {
+	margin: 0.5rem 0;
+}
+.my-1 {
+	margin: 1rem 0;
+}
+.my-2 {
+	margin: 2rem 0;
+}
+.my-3 {
+	margin: 3rem 0;
+}
+
+header {
+	.h1 {
+		@include important-titles;
+	}
+
+	.header__image {
+		max-height: 600px;
+	}
+
+	.header__p {
+		@include fontSize-fontWeigth(21px, bolder);
+	}
+
+	.main__btn {
+		background: $bkc_principal;
+		color: $black;
+	}
+}
+
+main,
+section {
+	.all__subtitle {
+		font-size: 4rem;
+		font-weight: 300;
+		text-align: center;
+	}
+
+	.card__main {
+		min-height: 455px;
+		margin-bottom: 25px;
+	}
+
+	.image__cards--index {
+		@include width-height(337px, 189px);
+	}
+
+	.img__fluid--tools {
+		@include width-height(351px, 219px);
+	}
+}
+
+.my-footer {
+	background-color: black;
+}
+
+.bk--contacto__index {
+	background-color: $bkc_principal;
+}
+
+.bk--body__path {
+	background-color: $indigo;
+}
+
+.bk--section__path {
+	background-color: $bkc_principal;
+}
+
+table {
+	width: 100%;
+	th {
+		text-align: center;
+		font-weight: 600;
+		font-size: 1rem;
+	}
+
+	td {
+		font-weight: 600;
+		font-size: 1rem;
+	}
+}
+
+.fa-globe-americas,
+.fa-user-graduate,
+.fa-tasks,
+.fa-laptop-code {
+	font-size: $icon_fontsize;
+}
+
+.hero-image {
+	background-image: url('../img/macbook2.jpg');
+	background-color: #fff;
+	height: 400px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.cards {
+	@include min-height(633px);
+}
+
+.image__cards--fuentes {
+	@include width-height(350px, 307px);
+}
+
+.view img {
+	margin: auto;
+}
+
+.whatsapp {
+	position: fixed;
+	width: 60px;
+	height: 60px;
+	bottom: 40px;
+	right: 40px;
+	background-color: #25d366;
+	color: #fff;
+	border-radius: 50px;
+	text-align: center;
+	font-size: 30px;
+	z-index: 100;
+}
+
+.whatsapp-icon {
+	margin-top: 13px;
+}
+
+/* 
+ Grillas
+*/
+.grids--bk__path {
+	background-color: $orange;
+}
+
+.grid-container {
+	height: 100%;
+	margin: 0;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	gap: 10px 10px;
+	grid-template-areas: 'laptops televisores celulares' 'apple pulgadas iphone' 'windows marcas android';
+}
+
+.grid-container > .laptops {
+	grid-area: laptops;
+	background-color: coral;
+	width: 100%;
+	height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.grid-container > .televisores {
+	grid-area: televisores;
+	background-color: coral;
+	width: 100%;
+	height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.grid-container > .celulares {
+	grid-area: celulares;
+	background-color: coral;
+	width: 100%;
+	height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.apple {
+	grid-area: apple;
+	width: 100%;
+	height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.apple {
+	animation-duration: 3s;
+	animation-name: apple;
+}
+
+@keyframes apple {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 0.5;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.windows {
+	grid-area: windows;
+	width: 100%;
+	height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	animation: pulse 3s ease infinite alternate;
+}
+
+.televisores {
+	animation: nudge 5s linear infinite alternate;
+}
+
+.laptops {
+	animation: nudge 5s linear infinite alternate;
+}
+
+.celulares {
+	animation: pulse 3s ease infinite alternate, nudge 5s linear infinite alternate;
+}
+
+.pulgadas {
+	grid-area: pulgadas;
+	width: 100%;
+	height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	animation: pulse 3s ease infinite alternate;
+}
+
+.marcas {
+	grid-area: marcas;
+	width: 100%;
+	height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.iphone {
+	grid-area: iphone;
+	width: 100%;
+	height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.android {
+	grid-area: android;
+	width: 100%;
+	height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.grid-container * {
+	border: 1px solid red;
+	position: relative;
+	background-color: deeppink;
+}
+
+.grid-container *:after {
+	/* content: attr(class); */
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: deepskyblue;
+}
+
+.gallery--bk__path {
+	background-color: $pink;
+}
+
+.row {
+	margin: 15px;
+}
+// $margin: 5;
+
+// @while $margin < 40px{
+//     .margin-#{margin}{
+//         margin: $margin;
+//     }
+//     $margin: $margin + 5px;
+// }
+
+/*MAP*/
+
+$rrss: (
+	youtube: $youtube_color,
+	facebook: $facebook_color,
+	instagram: $instagram_color
+);
+
+@each $clave, $valor in $rrss {
+	.redes-#{$clave} {
+		background-color: $valor;
+	}
+}

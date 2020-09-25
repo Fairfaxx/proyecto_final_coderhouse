@@ -1,0 +1,2 @@
+-- Se agregaron meta descriptions y meta keywords
+-- Agregué la etiqueta strong y em en titulos

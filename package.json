@@ -1,0 +1,22 @@
+{
+	"name": "camada9030",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"watch:css": "nodemon -e scss -x \"npm run build:css\"",
+		"build:css": "npm run css && npm run css-autoprefixer",
+		"css": "cross-var node-sass --importer node_modules/node-sass-glob-importer/dist/cli.js --output-style compressed scss/styles.scss css/styles.css",
+		"css-autoprefixer": "cross-var \"postcss -u autoprefixer -r css/*\""
+	},
+	"author": "Fede Lemaire",
+	"license": "ISC",
+	"devDependencies": {
+		"autoprefixer": "^9.7.1",
+		"cross-var": "^1.1.0",
+		"node-sass": "^4.14.1",
+		"node-sass-glob-importer": "^5.3.2",
+		"nodemon": "^2.0.4",
+		"postcss-cli": "^8.0.0"
+	}
+}
