@@ -1,7 +1,7 @@
 {
 	"name": "camada9030",
 	"version": "1.0.0",
-	"description": "",
+	"description": "-- Se agregaron meta descriptions y meta keywords -- Agregué la etiqueta strong y em en titulos",
 	"main": "index.js",
 	"scripts": {
 		"watch:css": "nodemon -e scss -x \"npm run build:css\"",
