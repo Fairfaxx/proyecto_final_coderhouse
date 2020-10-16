@@ -46,7 +46,7 @@
 			<i class="fab fa-whatsapp whatsapp-icon"></i
 		></a>
 		<!-- Bolita WhatsApp -->
-		<nav class="navbar bg-white navbar-expand-md font-weight-bolder navbar-light main-div-bg">
+		<nav class="navbar bg-white fixed-top navbar-expand-md font-weight-bolder navbar-light main-div-bg">
 			<a class="navbar-brand" href="#">Camada <i class="fas fa-code"></i> 9030</a>
 			<button
 				class="navbar-toggler"
@@ -61,13 +61,13 @@
 			</button>
 			<div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
 				<ul class="navbar-nav">
-					<li class="nav-item active">
+					<li class="nav-item">
 						<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#whyCoder">¿Porqué Coder?</a>
 					</li>
-					<li class="nav-item">
+					<li class="nav-item active">
 						<a class="nav-link" href="fuentes.html">Fuentes</a>
 					</li>
 					<li class="nav-item">
@@ -85,9 +85,9 @@
 
 		<header>
 			<!-- Jumbotron -->
-			<div id="backToTop" class="jumbotron  slower p-0">
+			<div id="backToTop" class="jumbotron slower p-0">
 				<!-- Card image -->
-				<div class="view overlay rounded-top header__image">
+				<div class="view overlay rounded-top header__image hover-zoomout">
 					<img src="img/macbook2.jpg" class="img-fluid" alt="Sample image" />
 					<a href="#">
 						<div class="mask rgba-white-slight"></div>
@@ -119,7 +119,7 @@
 						<div class="card grow cards mb-3">
 							<!-- Card image -->
 							<div class="view overlay">
-								<img class="card-img-top" src="img/mdn.jpeg" alt="Card image cap" />
+								<img class="card-img-top " src="img/mdn.jpeg" alt="Card image cap" />
 								<a href="#!">
 									<div class="mask rgba-white-slight"></div>
 								</a>
@@ -158,7 +158,8 @@
 								<p class="card-text">
 									Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o CSS es el lenguaje
 									de estilos utilizado para describir la presentación de documentos HTML o XML
-									(incluyendo varios languages basados en XML como SVG, MathML o XHTML).
+									(incluyendo varios languages basados en XML como SVG, MathML o XHTML). Aprender CSS
+									te ayudará en el futuro, acordate!
 								</p>
 								<a href="https://developer.mozilla.org/es/docs/Web/CSS" class="btn btn-primary d-block"
 									>Ir a MDN</a
@@ -184,6 +185,7 @@
 									JavaScript (o "JS") es un lenguaje de programación que se usa con mayor frecuencia
 									para scripts dinámicos de lado del cliente en páginas web, pero también se usa a
 									menudo en el lado del servidor — usando un entorno de ejecución como Node.js.
+									JavaScript es TODO.
 								</p>
 								<a
 									href="https://developer.mozilla.org/es/docs/Glossary/JavaScript"
@@ -229,7 +231,11 @@
 						<div class="card grow cards mb-3">
 							<!-- Card image -->
 							<div class="view overlay">
-								<img class="card-img-top" src="img/bootstrap.png" alt="Card image cap" />
+								<img
+									class="card-img-top image__cards--fuentes"
+									src="img/bootstrap.png"
+									alt="Card image cap"
+								/>
 								<a href="#!">
 									<div class="mask rgba-white-slight"></div>
 								</a>
@@ -241,11 +247,14 @@
 									Cheat Sheet sobre todas las clases que posee Bootstrap! Ahi podrás encontrar las
 									clases y podrás copiar el snippet para pegarlo directamente en tu archivo .html.
 									Bootstrap 4 contiene Less, Sass, JavaScript, Fonts, etc! Se puede instalar en tu
-									directorio de archivos o llamarlo a través de su CDN
+									directorio de archivos o llamarlo a través de su CDN. Hoy en día ya salió la versión
+									5 y también quiero contarte que podes aplicar Bootstrap en todos lados como Reactjs.
+									<a
+										href="https://hackerthemes.com/bootstrap-cheatsheet/"
+										class="btn btn-primary d-block"
+										>Ir al Cheat Sheet</a
+									>
 								</p>
-								<a href="https://hackerthemes.com/bootstrap-cheatsheet/" class="btn btn-primary d-block"
-									>Ir al Cheat Sheet</a
-								>
 							</div>
 						</div>
 						<!-- Card -->
@@ -271,7 +280,8 @@
 									Balsamiq Wireframes es una herramienta rápida de estructuración de líneas de
 									interfaz de usuario de baja fidelidad que reproduce la experiencia de dibujar en un
 									bloc de notas o pizarra, pero utilizando una computadora. Realmente te obliga a
-									centrarte en la estructura y el contenido.
+									centrarte en la estructura y el contenido. Después será mucho más fácil todo. Viendo
+									tu diseño entedes dónde hay que poner un párrafo o un título!
 								</p>
 								<a href="https://balsamiq.com/" class="btn btn-primary d-block">Ir a Balsamiq</a>
 							</div>
@@ -305,7 +315,10 @@
 								<i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
 							</a>
 							<a href="https://fedelemaire.netlify.app/#" class="pin-ic">
-								<i class="fas fa-male fa-lg white-text fa-2x"> </i>
+								<i class="fas fa-male fa-lg white-text mr-md-5 fa-2x"> </i>
+							</a>
+							<a href="https://github.com/Fairfaxx" class="pin-ic">
+								<i class="fab fa-github mr-md-5 ml-3 fa-2x"></i>
 							</a>
 						</div>
 					</div>
